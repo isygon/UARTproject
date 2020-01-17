@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:id="@+id/tgbOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tgbOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00001111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgbOn" />
+
+    <EditText
+        android:id="@+id/edtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01110111, 01010101"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddr" />
+
+    <EditText
+        android:id="@+id/edtOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OutputMsg "
+        app:layout_constraintLeft_toLeftOf="@+id/edtMsg"
+        app:layout_constraintTop_toBottomOf="@+id/edtMsg"  />
+
+    <EditText
+        android:id="@+id/edtIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="InputMsg"
+        app:layout_constraintLeft_toLeftOf="@+id/edtOut"
+        app:layout_constraintTop_toBottomOf="@+id/edtOut" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgbOff"  />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate"  />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIn" />
+
+    <TextView
+        android:id="@+id/txtConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect to:"
+        app:layout_constraintLeft_toLeftOf="@+id/btnConnect"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
